@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background" />
+
+        <com.skydoves.colorpickerview.ColorPickerView
+            android:id="@+id/color1"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ToggleButton
+                android:id="@+id/toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/mic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/white"
+                android:text="Mic"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background" />
+
+        <com.skydoves.colorpickerview.ColorPickerView
+            android:id="@+id/color2"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brightness"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/brightnessSlider"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_progress_color="@color/white"
+                app:cs_circle_stroke_width="5dp"
+                app:cs_circle_style="round"
+                app:cs_disable_progress_glow="false"
+                app:cs_end_angle="45"
+                app:cs_negative_enabled="true"
+                app:cs_pointer_angle="0"
+                app:cs_pointer_color="@color/white"
+                app:cs_pointer_halo_color="@color/black"
+                app:cs_pointer_halo_color_ontouch="@color/black"
+                app:cs_pointer_stroke_width="15dp"
+                app:cs_progress="1"
+                app:cs_start_angle="-225" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Speed"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/speedSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_progress_color="@color/white"
+                app:cs_circle_stroke_width="5dp"
+                app:cs_circle_style="round"
+                app:cs_disable_progress_glow="false"
+                app:cs_end_angle="45"
+                app:cs_negative_enabled="true"
+                app:cs_pointer_angle="0"
+                app:cs_pointer_color="@color/white"
+                app:cs_pointer_halo_color="@color/black"
+                app:cs_pointer_halo_color_ontouch="@color/black"
+                app:cs_pointer_stroke_width="15dp"
+                app:cs_progress="1"
+                app:cs_start_angle="-225" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:attr/listDivider" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundTint="@color/white"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search here" />
+
+
+            <RadioGroup
+                android:id="@+id/modes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

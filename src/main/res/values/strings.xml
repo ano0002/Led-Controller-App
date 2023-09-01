@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Led Controller</string>
+    <string name="app_description">Control your led strip</string>
+    <string name="app_name_short">Led Controller</string>
+    <string name="search">Search for devices</string>
+    <string name="speed">Speed</string>
+</resources>
